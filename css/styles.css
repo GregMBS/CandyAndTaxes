@@ -8,7 +8,20 @@ img {
     width: 30%
 }
 
+dd {
+    background-color: cadetblue;
+}
+
+dd img {
+    width: auto;
+    height: 60px;
+}
+
 #sum {
     font-weight: bold;
     margin: 0;
+}
+
+#textBox .modal-body {
+    font-size: larger;
 }

@@ -79,6 +79,9 @@ $(function () {
 
     const startButton = $('#start');
     const allButtons = $('button');
+    const textBox = $('#textBox');
+    const modalTitle = $('#textBox .modal-title');
+    const modalBody = $('#textBox .modal-body');
 
     function placeHtml(i, where, values) {
         let text = makeBox(values[i]);
@@ -134,6 +137,18 @@ $(function () {
     $('#regressive').click(function () {
         let result = distribution.map(({regressive}) => regressive);
         allHtml(result);
+        modalTitle.html('Regressive Taxes');
+        modalBody.html('<p>Every person pays the same amount, but those who have less income end up ' +
+            'paying a much larger percentage of their income in taxes, while those with larger incomes pay a smaller ' +
+            'percentage of their income in taxes</p>' +
+            '<ul>' +
+            '<li>Poor people pay a lot!</li>' +
+            '<li>The rich become richer and richer</li>' +
+            '<li>The government does not have what it needs to meet its needs</li>' +
+            '<li>There are no services and the infrastructure crumbles</li>' +
+            '</ul>'
+        );
+        textBox.modal();
         budget('regressive')
         fixButtons($(this));
     });
@@ -141,6 +156,15 @@ $(function () {
     $('#proportional').click(function () {
         let result = distribution.map(({proportional}) => proportional);
         allHtml(result);
+        modalTitle.html('Proportional Taxes');
+        modalBody.html('<p>Everyone pays the same percentage of income regardless of how much or how little income a person makes.</p>' +
+            '<ul>' +
+            '<li>People pay the same percent, but this is harder on the poor</li>' +
+            '<li>The government does not have sufficient candy to meet society’s needs</li>' +
+            '<li>There are no services and the infrastructure crumbles</li>' +
+            '</ul>'
+        );
+        textBox.modal();
         budget('proportional')
         fixButtons($(this));
     });
@@ -148,6 +172,15 @@ $(function () {
     $('#progressive').click(function () {
         let result = distribution.map(({progressive}) => progressive);
         allHtml(result);
+        modalTitle.html('Progressive Taxes');
+        modalBody.html('<p>Those people with larger incomes pay a greater percentage of their income in taxes.</p>' +
+            '<ul>' +
+            '<li>The poor pay amounts that are affordable to them</li>' +
+            '<li>The government has sufficient candy to meet society’s needs</li>' +
+            '<li>The richest remain the richest even though they are paying higher taxes</li>' +
+            '</ul>'
+        );
+        textBox.modal();
         budget('progressive')
         fixButtons($(this));
     });
@@ -155,6 +188,14 @@ $(function () {
     $('#redistribution').click(function () {
         let result = distribution.map(({redistribution}) => redistribution);
         allHtml(result);
+        modalTitle.html('Redistribution');
+        modalBody.html('<p>If the government receives sufficient candy in taxes, it is possible to redistribute enough candy so everyone can have some.</p>' +
+            '<ul>' +
+            '<li>The government has sufficient candy to meet society’s needs</li>' +
+            '<li>The richest remain the richest even though they are paying higher taxes</li>' +
+            '</ul>'
+        );
+        textBox.modal();
         budget('redistribution')
         fixButtons($(this));
     });
