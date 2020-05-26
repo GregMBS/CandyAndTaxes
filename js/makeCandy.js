@@ -34,6 +34,16 @@ function makeBox(n) {
     return box;
 }
 
+/**
+ *
+ * @param {number} n
+ * @returns {string}
+ */
+function makeLineItem(n) {
+    return '<img alt=' + n + '" candies" class="img-responsive" src="images/line-' + n + '.png">' + "\n";
+}
+
+
 const distribution = [
         {start: 28, regressive: 27, proportional: 21, progressive: 10, redistribution: 10},
         {start: 13, regressive: 12, proportional: 10, progressive: 7, redistribution: 7},
@@ -97,12 +107,12 @@ $(function () {
         const general = government.find(lineItem => lineItem.id === 'general')[taxation];
         const savings = government.find(lineItem => lineItem.id === 'savings')[taxation];
         const total = government.find(lineItem => lineItem.id === 'total')[taxation];
-        $('#defense').html(defense);
-        $('#education').html(education);
-        $('#infrastructure').html(infrastructure);
-        $('#healthcare').html(healthcare);
-        $('#general').html(general);
-        $('#savings').html(savings);
+        $('#defense').html(makeLineItem(defense));
+        $('#education').html(makeLineItem(education));
+        $('#infrastructure').html(makeLineItem(infrastructure));
+        $('#healthcare').html(makeLineItem(healthcare));
+        $('#general').html(makeLineItem(general));
+        $('#savings').html(makeLineItem(savings));
         $('#total').html(total);
     }
 
