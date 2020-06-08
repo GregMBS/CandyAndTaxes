@@ -8,8 +8,15 @@ img {
     width: 30%
 }
 
+.lecture {
+    font-size: larger;
+}
+
 .lecture img {
-    width: 100%
+    width: 60%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 dd {
@@ -43,4 +50,9 @@ dd img {
 .punch {
     font-size: larger;
     background-color: aqua;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1em;
 }
