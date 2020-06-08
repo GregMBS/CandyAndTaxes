@@ -29,3 +29,14 @@ dd img {
 .studentBox {
     background-color: pink;
 }
+
+.loud {
+    color: red;
+    font-size: larger;
+    text-align: center;
+}
+
+.punch {
+    font-size: larger;
+    background-color: aqua;
+}

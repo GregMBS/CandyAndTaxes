@@ -188,7 +188,8 @@ $(function () {
             '<li>The poor pay amounts that are affordable to them</li>' +
             '<li>The government has sufficient candy to meet society’s needs</li>' +
             '<li>The richest remain the richest even though they are paying higher taxes</li>' +
-            '</ul>'
+            '</ul>' +
+            '<div class="loud">Notice how under progressive taxation, the U.S. would have <span class="punch">NO federal debt!</span> </div>'
         );
         textBox.modal();
         budget('progressive')
