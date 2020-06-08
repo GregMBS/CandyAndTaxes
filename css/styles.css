@@ -25,3 +25,7 @@ dd img {
 #textBox .modal-body {
     font-size: larger;
 }
+
+.studentBox {
+    background-color: pink;
+}
