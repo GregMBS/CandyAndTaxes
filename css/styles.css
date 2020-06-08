@@ -8,6 +8,10 @@ img {
     width: 30%
 }
 
+.lecture img {
+    width: 100%
+}
+
 dd {
     background-color: cadetblue;
 }

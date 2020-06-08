@@ -122,7 +122,8 @@ $(function () {
     function initialize() {
         modalTitle.html('Candy &amp; Taxes');
         modalBody.html('<div style="font-size: xx-large">' +
-            '<blockquote>&quot;Taxes are what we pay for civilized society.&quot;</blockquote><br><cite>Supreme Court Justice Oliver Wendell Holmes, Jr. (1841–1935).</cite>' +
+            '<blockquote class="blockquote">&quot;Taxes are what we pay for civilized society.&quot;</blockquote><br>' +
+            '<footer class="blockquote-footer"><cite>Supreme Court Justice Oliver Wendell Holmes, Jr. (1841–1935).</cite></footer>' +
             '</div>'
         );
         textBox.modal();
