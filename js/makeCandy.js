@@ -205,7 +205,8 @@ $(function () {
             '<ul>' +
             '<li>The government has sufficient candy to meet society’s needs</li>' +
             '<li>The richest remain the richest even though they are paying higher taxes</li>' +
-            '</ul>'
+            '</ul>' +
+            '<div class="loud">Notice how under redistributive taxation, the U.S. would <span class="punch">STILL</span> have <span class="punch">NO federal debt!</span> </div>'
         );
         textBox.modal();
         budget('redistribution')
