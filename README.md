@@ -5,6 +5,9 @@
  
  This implementation uses BootstrapJS and VueJS.
  
- For questions about the content, please contact Dr. Elena Delavega at mdlavega@memphis.edu.
+ A working copy of this can be found at https://candy.gmbs-consulting.com.
+ 
+ For questions about the content or to receive a teaching guide, please contact Dr. Elena Delavega at mdlavega@memphis.edu.
  
  For questions about the technical implementation, please contact Dr. Gregory M. Blumenthal at greg@gmbs-consulting.com.
+ 
