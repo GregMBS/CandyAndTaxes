@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1"
-  }
+    "bootstrap": "^5.3.3",
+    "@popperjs/core": "^2.11.8",
+    "jquery": "^3.7.1"
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
